@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/hockey/!svn/ver/19/grails-app/views/main
+END
+listGames.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/hockey/!svn/ver/4/grails-app/views/main/listGames.gsp
+END
+listPlayers.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/hockey/!svn/ver/19/grails-app/views/main/listPlayers.gsp
+END
+viewPlayerDetails.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/hockey/!svn/ver/19/grails-app/views/main/viewPlayerDetails.gsp
+END
+createGame.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/hockey/!svn/ver/21/grails-app/views/main/createGame.gsp
+END
+listRecords.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/hockey/!svn/ver/5/grails-app/views/main/listRecords.gsp
+END
+listMatchups.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/hockey/!svn/ver/4/grails-app/views/main/listMatchups.gsp
+END
+foo.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/hockey/!svn/ver/1/grails-app/views/main/foo.gsp
+END
+listHockeySessions.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/hockey/!svn/ver/21/grails-app/views/main/listHockeySessions.gsp
+END

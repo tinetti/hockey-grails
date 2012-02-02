@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/hockey/!svn/ver/19/grails-app/views
+END
+index.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/hockey/!svn/ver/1/grails-app/views/index.gsp
+END
+admin.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/hockey/!svn/ver/1/grails-app/views/admin.gsp
+END
+error.gsp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/hockey/!svn/ver/1/grails-app/views/error.gsp
+END

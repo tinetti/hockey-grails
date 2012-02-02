@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/hockey/!svn/ver/19/grails-app/services/ss/hockey
+END
+PlayerService.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/hockey/!svn/ver/21/grails-app/services/ss/hockey/PlayerService.groovy
+END
+ChartService.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/hockey/!svn/ver/19/grails-app/services/ss/hockey/ChartService.groovy
+END
+GameService.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/hockey/!svn/ver/21/grails-app/services/ss/hockey/GameService.groovy
+END

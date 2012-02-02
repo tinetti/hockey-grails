@@ -1,0 +1,17 @@
+Welcome to Grails 1.3.7 - http://grails.org/
+Licensed under Apache Standard License 2.0
+Grails home is set to: /Developer/Library/grails
+
+Base Directory: /Developer/Workspace/hockey
+Resolving dependencies...
+Dependencies resolved in 522ms.
+Running script /Developer/Library/grails/scripts/RunApp.groovy
+Environment set to production
+   [delete] Deleting directory /Users/tinetti/.grails/1.3.7/projects/hockey/tomcat
+Running Grails application..
+Server running. Browse to http://localhost:8080/hockey
+viewPlayerDetails: GameFilter[gameVersion:NHL11,gamePlayerIdFilter:PlayerIdFilter[ids=[1], strategy=ANY]]
+viewPlayerDetails: GameFilter[gameVersion:NHL11,gamePlayerIdFilter:PlayerIdFilter[ids=[4], strategy=ANY]]
+viewPlayerDetails: GameFilter[gameVersion:NHL11,gamePlayerIdFilter:PlayerIdFilter[ids=[1], strategy=ANY]]
+Application context shutting down...
+Application context shutdown.

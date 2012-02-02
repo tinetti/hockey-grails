@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/hockey/!svn/ver/19/test/unit/ss/hockey
+END
+HockeyTagLibTagLibTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/hockey/!svn/ver/1/test/unit/ss/hockey/HockeyTagLibTagLibTests.groovy
+END
+MainControllerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/hockey/!svn/ver/1/test/unit/ss/hockey/MainControllerTests.groovy
+END
+GameServiceTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/hockey/!svn/ver/1/test/unit/ss/hockey/GameServiceTests.groovy
+END
+GamePlayerControllerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/hockey/!svn/ver/19/test/unit/ss/hockey/GamePlayerControllerTests.groovy
+END
+PlayerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/hockey/!svn/ver/1/test/unit/ss/hockey/PlayerTests.groovy
+END
+PlayerServiceTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/hockey/!svn/ver/1/test/unit/ss/hockey/PlayerServiceTests.groovy
+END
+GameControllerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/hockey/!svn/ver/19/test/unit/ss/hockey/GameControllerTests.groovy
+END
+PlayerControllerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/hockey/!svn/ver/19/test/unit/ss/hockey/PlayerControllerTests.groovy
+END
+NhlTeamRatingControllerTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/hockey/!svn/ver/19/test/unit/ss/hockey/NhlTeamRatingControllerTests.groovy
+END
+ChartServiceTests.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/hockey/!svn/ver/15/test/unit/ss/hockey/ChartServiceTests.groovy
+END
+Mom.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/hockey/!svn/ver/15/test/unit/ss/hockey/Mom.groovy
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/hockey/!svn/ver/16/db-original
+END
+devDb.properties
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/hockey/!svn/ver/16/db-original/devDb.properties
+END
+testDb.properties
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/hockey/!svn/ver/16/db-original/testDb.properties
+END
+hockeyDb.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/hockey/!svn/ver/16/db-original/hockeyDb.properties
+END
+devDb.script
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/hockey/!svn/ver/16/db-original/devDb.script
+END
+testDb.script
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/hockey/!svn/ver/16/db-original/testDb.script
+END
+copyDb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/hockey/!svn/ver/16/db-original/copyDb.sh
+END
+migrate-db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/hockey/!svn/ver/16/db-original/migrate-db.sql
+END
+hockeyDb.script
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/hockey/!svn/ver/16/db-original/hockeyDb.script
+END
