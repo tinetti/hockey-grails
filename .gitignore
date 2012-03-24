@@ -1,2 +1,4 @@
 target-eclipse
 target
+*.log
+nohup.out
