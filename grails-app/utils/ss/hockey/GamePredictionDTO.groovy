@@ -9,7 +9,6 @@ class GamePredictionDTO {
   Double awayShots = 0
   Double awayHits = 0
   Double awayTimeOnAttack = 0
-  Double awayPenaltyMinutes = 0
   Double awayPassingPercentage = 0
   Double awayDrinks = 0
   Double awayRating = 0
@@ -19,7 +18,6 @@ class GamePredictionDTO {
   Double homeTimeOnAttack = 0
   Double homeRating = 0
   Double homeDrinks = 0
-  Double homePenaltyMinutes = 0
   Double homePassingPercentage = 0
 
 }

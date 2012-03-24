@@ -171,24 +171,6 @@
 
         <g:if test="${prediction}">
           <tr class="predictionRow">
-            <td class="label">PPenalty Min:</td>
-            <td><span>${ss.hockey.DateUtils.secondsToString(prediction.awayPenaltyMinutes ?: 0)}</span></td>
-            <td><span>${ss.hockey.DateUtils.secondsToString(prediction.homePenaltyMinutes ?: 0)}</span></td>
-          </tr>
-        </g:if>
-
-        <tr>
-          <td class="label">Penalty Min:</td>
-          <td class="value ${hasErrors(bean: command, field: 'awayPenaltyMinutesString', 'errors')}">
-            <input type="text" name="awayPenaltyMinutesString" id="awayPenaltyMinutes" value="${command?.awayPenaltyMinutesString}" class="createGameValueEditor"/>
-          </td>
-          <td class="value ${hasErrors(bean: command, field: 'homePenaltyMinutesString', 'errors')}">
-            <input type="text" name="homePenaltyMinutesString" id="homePenaltyMinutes" value="${command?.homePenaltyMinutesString}" class="createGameValueEditor"/>
-          </td>
-        </tr>
-
-        <g:if test="${prediction}">
-          <tr class="predictionRow">
             <td class="label">PRating:</td>
             <td><span>${singleDecimalFormat.format(prediction.awayRating ?: 0)}</span></td>
             <td><span>${singleDecimalFormat.format(prediction.homeRating ?: 0)}</span></td>
@@ -199,16 +181,6 @@
             <td><span>${singleDecimalFormat.format(prediction.homeDrinks ?: 0)}</span></td>
           </tr>
         </g:if>
-
-        <tr>
-          <td class="label">Drinks:</td>
-          <td class="value ${hasErrors(bean: command, field: 'awayDrinks', 'errors')}">
-            <input type="text" name="awayDrinks" id="awayDrinks" value="${command?.awayDrinks}" class="createGameValueEditor"/>
-          </td>
-          <td class="value ${hasErrors(bean: command, field: 'homeDrinks', 'errors')}">
-            <input type="text" name="homeDrinks" id="homeDrinks" value="${command?.homeDrinks}" class="createGameValueEditor"/>
-          </td>
-        </tr>
 
         <tr class="prop">
           <td>Length:</td>

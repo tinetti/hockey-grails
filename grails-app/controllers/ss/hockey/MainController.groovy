@@ -77,8 +77,6 @@ class MainController {
       command.homeTimeOnAttackString = game.homeStats.timeOnAttackString
       command.awayPassingPercentage = game.awayStats.passingPercentage
       command.homePassingPercentage = game.homeStats.passingPercentage
-      command.awayPenaltyMinutesString = game.awayStats.penaltyMinutesString
-      command.homePenaltyMinutesString = game.homeStats.penaltyMinutesString
       command.gameLength = game.gameLength
       command.notes = game.notes
       command.gameVersion = game.gameVersion
@@ -263,8 +261,8 @@ class MainController {
       game.addToGamePlayers(new GamePlayer(player: Player.get(it), home: true))
     }
 
-    game.awayStats = new TeamStats(team:command.awayTeam, score:command.awayScore, shots:command.awayShots, hits:command.awayHits, timeOnAttackString:command.awayTimeOnAttackString, passingPercentage:command.awayPassingPercentage, penaltyMinutesString:command.awayPenaltyMinutesString, drinks:command.awayDrinks)
-    game.homeStats = new TeamStats(team:command.homeTeam, score:command.homeScore, shots:command.homeShots, hits:command.homeHits, timeOnAttackString:command.homeTimeOnAttackString, passingPercentage:command.homePassingPercentage, penaltyMinutesString:command.homePenaltyMinutesString, drinks:command.homeDrinks)
+    game.awayStats = new TeamStats(team:command.awayTeam, score:command.awayScore, shots:command.awayShots, hits:command.awayHits, timeOnAttackString:command.awayTimeOnAttackString, passingPercentage:command.awayPassingPercentage)
+    game.homeStats = new TeamStats(team:command.homeTeam, score:command.homeScore, shots:command.homeShots, hits:command.homeHits, timeOnAttackString:command.homeTimeOnAttackString, passingPercentage:command.homePassingPercentage)
 
     return game
   }
@@ -388,10 +386,6 @@ class CreateGameCommand {
   Integer homeHits
   String awayTimeOnAttackString
   String homeTimeOnAttackString
-  String awayPenaltyMinutesString
-  String homePenaltyMinutesString
   Integer awayPassingPercentage
   Integer homePassingPercentage
-  Integer awayDrinks
-  Integer homeDrinks
 }

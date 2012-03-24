@@ -112,15 +112,10 @@ class TeamStats {
     hits(nullable: true)
     timeOnAttack(nullable: true)
     passingPercentage(nullable: true)
-    penaltyMinutes(nullable: true)
-    penaltyMinutesString(nullable: true)
-    penaltyTimeString(nullable: true)
-    drinks(nullable: true)
   }
 
   static transients = [
     'timeOnAttackString',
-    'penaltyMinutesString',
     'shotPercentage'
   ]
 
@@ -132,27 +127,6 @@ class TeamStats {
   Integer hits
   Integer timeOnAttack
   Integer passingPercentage
-  Integer penaltyMinutes
-  Integer drinks
-  
-  void setPenaltyTimeString(String time) {
-    if (time != null && time != '') {
-      setPenaltyMinutesString(time)
-    }
-  }
-  
-  String getPenaltyTimeString() {
-    return penaltyMinutesString
-  }
-  
-  void setPenaltyMinutes(Integer penaltyMinutes) {
-    if (penaltyMinutes < 1) {
-      penaltyMinutes == 0
-    } else if (penaltyMinutes > 60) {
-      penaltyMinutes /= 60
-    }
-    this.penaltyMinutes = penaltyMinutes
-  }
 
   String getTimeOnAttackString() {
     return DateUtils.secondsToString(timeOnAttack)
@@ -161,20 +135,12 @@ class TeamStats {
   void setTimeOnAttackString(String toa) {
     timeOnAttack = DateUtils.stringToSeconds(toa)
   }
-  
-  String getPenaltyMinutesString() {
-    return DateUtils.secondsToString((penaltyMinutes ?: 0) * 60)
-  }
-  
-  void setPenaltyMinutesString(String toa) {
-    setPenaltyMinutes(DateUtils.stringToSeconds(toa))
-  }
 
   Double getShotPercentage() {
     return shots ? score / (shots as Double) : 0
   }
 
   String toString() {
-    return "TeamStats[score=${score}, team=${team}, shots=${shots}, hits=${hits}, timeOnAttack=${timeOnAttackString}, drinks=${drinks}]"
+    return "TeamStats[score=${score}, team=${team}, shots=${shots}, hits=${hits}, timeOnAttack=${timeOnAttackString}]"
   }
 }

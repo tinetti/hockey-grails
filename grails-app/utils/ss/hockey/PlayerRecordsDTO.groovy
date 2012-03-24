@@ -32,8 +32,6 @@ class PlayerRecordsDTO {
   Double timeOnAttackAgainstPerGame = 0
   Double passingPercentageFor = 0
   Double passingPercentageAgainst = 0
-  Double penaltyMinutesForPerGame = 0
-  Double penaltyMinutesAgainstPerGame = 0
 
 }
 

@@ -39,10 +39,6 @@ class PlayerDTO {
   Long passingPercentageForGames = 0
   Long passingPercentageAgainst = 0
   Long passingPercentageAgainstGames = 0
-  Long penaltyMinutesFor = 0
-  Long penaltyMinutesForGames = 0
-  Long penaltyMinutesAgainst = 0
-  Long penaltyMinutesAgainstGames = 0
   Double ratingFor = 0
   Double ratedGamesFor = 0
   Double ratingAgainst = 0
@@ -123,30 +119,12 @@ class PlayerDTO {
     return toaAgainstPerGame ? DateUtils.secondsToString(toaAgainstPerGame) : null
   }
 
-  Double getPassingPercentageFor() {
-    return passingPercentageForGames == 0 ? null : passingPercentageFor / passingPercentageForGames
+  Double getPassingPercentageForAverage() {
+    return passingPercentageForGames == 0 ? null : (passingPercentageFor / passingPercentageForGames / 100)
   }
 
-  Double getPassingPercentageAgainst() {
-    return passingPercentageAgainstGames == 0 ? null : passingPercentageAgainst / passingPercentageAgainstGames
-  }
-
-  Double getPenaltyMinutesForPerGame() {
-    return penaltyMinutesForGames == 0 ? null : penaltyMinutesFor / penaltyMinutesForGames
-  }
-
-  Double getPenaltyMinutesAgainstPerGame() {
-    return penaltyMinutesAgainstGames == 0 ? null : penaltyMinutesAgainst / penaltyMinutesAgainstGames
-  }
-
-  String getPenaltyMinutesForPerGameString() {
-    def timeForPerGame = getPenaltyMinutesForPerGame()
-    return timeForPerGame ? DateUtils.secondsToString(timeForPerGame) : null
-  }
-
-  String getPenaltyMinutesAgainstPerGameString() {
-    def timeAgainstPerGame = getPenaltyMinutesAgainstPerGame()
-    return timeAgainstPerGame ? DateUtils.secondsToString(timeAgainstPerGame) : null
+  Double getPassingPercentageAgainstAverage() {
+    return passingPercentageAgainstGames == 0 ? null : (passingPercentageAgainst / passingPercentageAgainstGames / 100)
   }
 
   Double getRatingForPerGame() {
@@ -280,10 +258,6 @@ class PlayerDTO {
       passingPercentageFor += forStats.passingPercentage
       passingPercentageForGames++
     }
-    if (forStats.penaltyMinutes) {
-      penaltyMinutesFor += forStats.penaltyMinutes
-      penaltyMinutesForGames++
-    }
 
     if (againstStats.shots) {
       shotsAgainst += againstStats.shots
@@ -301,10 +275,6 @@ class PlayerDTO {
     if (againstStats.passingPercentage) {
       passingPercentageAgainst += againstStats.passingPercentage
       passingPercentageAgainstGames++
-    }
-    if (againstStats.penaltyMinutes) {
-      penaltyMinutesAgainst += againstStats.penaltyMinutes
-      penaltyMinutesAgainstGames++
     }
 
     def forRating = RatingUtils.getRating(forStats, againstStats, game.gameLength)

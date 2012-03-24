@@ -44,7 +44,6 @@ class HockeyTagLib {
       <th class=\"hitsColumn\">Hits</th> \n\
       <th class=\"toaColumn\">T.O.A.</th> \n\
       <th class=\"passingColumn\">Passing</th> \n\
-      <th class=\"penaltyColumn\">Penalty</th> \n\
       <th class=\"drinksColumn\">Drinks</th> \n\
       <th class=\"versionColumn\">Version</th> \n\
       <th class=\"dateColumn\">Date</th> \n\
@@ -131,10 +130,6 @@ class HockeyTagLib {
       <td> \n\
         <div class=\"${awayClass}\">${toPercentageString(game.awayStats.passingPercentage)}</div> \n\
         <div class=\"${homeClass}\">${toPercentageString(game.homeStats.passingPercentage)}</div> \n\
-      </td> \n\
-      <td> \n\
-        <div class=\"${awayClass}\">${game.awayStats.penaltyMinutesString ?: ''}</div> \n\
-        <div class=\"${homeClass}\">${game.homeStats.penaltyMinutesString ?: ''}</div> \n\
       </td> \n\
       <td> \n\
         <div class=\"${awayClass}\">${game.awayDrinksDescription}</div> \n\
@@ -315,10 +310,8 @@ class HockeyTagLib {
     <th style=\"width: 40px;\" class=\"sortable\">HA/G</th> \n\
     <th style=\"width: 40px;\" class=\"sortable\">TF/G</th> \n\
     <th style=\"width: 40px;\" class=\"sortable\">TA/G</th> \n\
-    <th style=\"width: 40px;\" class=\"sortable\">Pass</th> \n\
-    <th style=\"width: 40px;\" class=\"sortable\">Pass</th> \n\
-    <th style=\"width: 40px;\" class=\"sortable\">PMF/G</th> \n\
-    <th style=\"width: 40px;\" class=\"sortable\">PMA/G</th> \n\
+    <th style=\"width: 40px;\" class=\"sortable\">P%F</th> \n\
+    <th style=\"width: 40px;\" class=\"sortable\">P%A</th> \n\
     <th style=\"width: 40px;\" class=\"sortable\">DF</th> \n\
     <th style=\"width: 40px;\" class=\"sortable\">DA</th> \n\
   </tr> \n\
@@ -366,17 +359,11 @@ class HockeyTagLib {
       <td class=\"${player.timeOnAttackAgainstPerGame == playerRecordsDTOHigh?.timeOnAttackAgainstPerGame ? 'winner' : player.timeOnAttackAgainstPerGame == playerRecordsDTOLow?.timeOnAttackAgainstPerGame ? 'loser' : ''}\"> \n\
         <span>${player.timeOnAttackAgainstPerGameString ?: '0:00'}</span> \n\
       </td> \n\
-      <td class=\"${player.passingPercentageFor == playerRecordsDTOHigh?.passingPercentageFor ? 'winner' : player.passingPercentageFor == playerRecordsDTOLow?.passingPercentageFor ? 'loser' : ''}\"> \n\
-        <span>${PERCENT_FORMAT.format(player.passingPercentageFor ?: 0)}</span> \n\
+      <td class=\"${player.passingPercentageForAverage == playerRecordsDTOHigh?.passingPercentageFor ? 'winner' : player.passingPercentageForAverage == playerRecordsDTOLow?.passingPercentageFor ? 'loser' : ''}\"> \n\
+        <span>${PERCENT_FORMAT.format(player.passingPercentageForAverage ?: 0)}</span> \n\
       </td> \n\
-      <td class=\"${player.passingPercentageAgainst == playerRecordsDTOHigh?.passingPercentageAgainst ? 'winner' : player.passingPercentageAgainst == playerRecordsDTOLow?.passingPercentageAgainst ? 'loser' : ''}\"> \n\
-        <span>${PERCENT_FORMAT.format(player.passingPercentageAgainst ?: 0)}</span> \n\
-      </td> \n\
-      <td class=\"${player.penaltyMinutesForPerGame == playerRecordsDTOHigh?.penaltyMinutesForPerGame ? 'winner' : player.penaltyMinutesForPerGame == playerRecordsDTOLow?.penaltyMinutesForPerGame ? 'loser' : ''}\"> \n\
-        <span>${player.penaltyMinutesForPerGameString ?: '0:00'}</span> \n\
-      </td> \n\
-      <td class=\"${player.penaltyMinutesAgainstPerGame == playerRecordsDTOHigh?.penaltyMinutesAgainstPerGame ? 'winner' : player.penaltyMinutesAgainstPerGame == playerRecordsDTOLow?.penaltyMinutesAgainstPerGame ? 'loser' : ''}\"> \n\
-        <span>${player.penaltyMinutesAgainstPerGameString ?: '0:00'}</span> \n\
+      <td class=\"${player.passingPercentageAgainstAverage == playerRecordsDTOHigh?.passingPercentageAgainst ? 'winner' : player.passingPercentageAgainstAverage == playerRecordsDTOLow?.passingPercentageAgainst ? 'loser' : ''}\"> \n\
+        <span>${PERCENT_FORMAT.format(player.passingPercentageAgainstAverage ?: 0)}</span> \n\
       </td> \n\
       <td class=\"${player.drinksForPerGame == playerRecordsDTOHigh?.drinksForPerGame ? 'winner' : player.drinksForPerGame == playerRecordsDTOLow?.drinksForPerGame ? 'loser' : ''}\">  \n\
         <span>${SINGLE_DECIMAL_FORMAT.format(player.drinksFor ?: 0)}</span> \n\

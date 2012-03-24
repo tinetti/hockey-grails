@@ -89,8 +89,6 @@ class GameService {
           'homeTimeOnAttack':'timeOnAttackAgainstPerGame',
           'awayPassingPercentage':'passingPercentageFor',
           'homePassingPercentage':'passingPercentageAgainst',
-          'awayPenaltyMinutes':'penaltyMinutesForPerGame',
-          'homePenaltyMinutes':'penaltyMinutesAgainstPerGame',
           'awayRating':'ratingForPerGame',
           'homeRating':'ratingAgainstPerGame',
           'awayDrinks':'drinksForPerGame',

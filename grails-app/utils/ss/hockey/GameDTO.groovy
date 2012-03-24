@@ -76,37 +76,21 @@ class GameDTO {
   Double getAwayTimeOnAttackRating() {
     return RatingUtils.getTimeOnAttackRating(awayStats, homeStats)
   }
-
-  Double getHomeActualDrinks() {
-    return homeStats?.drinks
-  }
-  
-  Double getAwayActualDrinks() {
-    return awayStats?.drinks
-  }
-  
-  Double getHomeEstimatedDrinks() {
-    return RatingUtils.getDrinks(homeStats, awayStats, game.notes)
-  }
-
-  Double getAwayEstimatedDrinks() {
-    return RatingUtils.getDrinks(awayStats, homeStats, game.notes)
-  }
   
   Double getHomeDrinks() {
-    return homeActualDrinks ?: homeEstimatedDrinks
+    return RatingUtils.getDrinks(homeStats, awayStats, game.notes)
   }
   
   Double getAwayDrinks() {
-    return awayActualDrinks ?: awayEstimatedDrinks
+    return RatingUtils.getDrinks(awayStats, homeStats, game.notes)
   }
   
   String getHomeDrinksDescription() {
-    return homeActualDrinks ? "${homeActualDrinks as Long}":  "~${homeEstimatedDrinks as Long}"
+    return "~${homeDrinks as Long}"
   }
   
   String getAwayDrinksDescription() {
-    return awayActualDrinks ? "${awayActualDrinks as Long}":  "~${awayEstimatedDrinks as Long}"
+    return "~${awayDrinks as Long}"
   }
 
   synchronized List<PlayerDTO> getPlayers() {
