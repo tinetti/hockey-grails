@@ -23,10 +23,18 @@ environments {
       url = "jdbc:hsqldb:file:testDb;shutdown=true"
     }
   }
+//  production {
+//    dataSource {
+//      dbCreate = "create"
+//      url = "jdbc:hsqldb:file:hockeyDb;shutdown=true"
+//    }
+//  }
   production {
     dataSource {
-      dbCreate = "update"
-      url = "jdbc:hsqldb:file:hockeyDb;shutdown=true"
+      dbCreate = "none"
+      url = "jdbc:mysql://mysql.swervesoft.net:3306/hockey?useUnicode=yes&characterEncoding=UTF-8"
+      username = "hockey"
+      password = "hockey"
     }
   }
 }
