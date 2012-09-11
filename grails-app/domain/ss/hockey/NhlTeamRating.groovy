@@ -18,7 +18,7 @@ class NhlTeamRating {
   Integer goalie
 
   Integer getTotalRating() {
-    return offense + defense + goalie - 240
+    return offense + defense + goalie
   }
 
   String toString() {
