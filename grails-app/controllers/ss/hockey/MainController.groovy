@@ -102,7 +102,7 @@ class MainController {
   }
 
   def listPlayers = { ListGamesCommand command ->
-    GameFilter gameFilter = session['gameFilter']
+    GameFilter gameFilter = session['gameFilter'] as GameFilter
     if (!gameFilter || params['resetFilter']) {
       gameFilter = createDefaultPlayerListGameFilter()
     }

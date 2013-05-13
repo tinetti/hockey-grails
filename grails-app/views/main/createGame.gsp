@@ -108,10 +108,10 @@
         <tr>
           <td class="label">Shots:</td>
           <td class="value ${hasErrors(bean: command, field: 'awayShots', 'errors')}">
-            <input type="text" name="awayShots" id="awayShots" value="${command?.awayShots}" class="createGameValueEditor"/>
+            <input type="tel" name="awayShots" id="awayShots" value="${command?.awayShots}" class="createGameValueEditor"/>
           </td>
           <td class="value ${hasErrors(bean: command, field: 'homeShots', 'errors')}">
-            <input type="text" name="homeShots" id="homeShots" value="${command?.homeShots}" class="createGameValueEditor"/>
+            <input type="tel" name="homeShots" id="homeShots" value="${command?.homeShots}" class="createGameValueEditor"/>
           </td>
         </tr>
 
@@ -126,10 +126,10 @@
         <tr>
           <td class="label">Hits:</td>
           <td class="value ${hasErrors(bean: command, field: 'awayHits', 'errors')}">
-            <input type="text" name="awayHits" id="awayHits" value="${command?.awayHits}" class="createGameValueEditor"/>
+            <input type="tel" name="awayHits" id="awayHits" value="${command?.awayHits}" class="createGameValueEditor"/>
           </td>
           <td class="value ${hasErrors(bean: command, field: 'homeHits', 'errors')}">
-            <input type="text" name="homeHits" id="homeHits" value="${command?.homeHits}" class="createGameValueEditor"/>
+            <input type="tel" name="homeHits" id="homeHits" value="${command?.homeHits}" class="createGameValueEditor"/>
           </td>
         </tr>
 
@@ -144,10 +144,10 @@
         <tr>
           <td class="label">TOA:</td>
           <td class="value ${hasErrors(bean: command, field: 'awayTimeOnAttackString', 'errors')}">
-            <input type="text" name="awayTimeOnAttackString" id="awayTimeOnAttack" value="${command?.awayTimeOnAttackString}" class="createGameValueEditor"/>
+            <input type="tel" name="awayTimeOnAttackString" id="awayTimeOnAttack" value="${command?.awayTimeOnAttackString}" class="createGameValueEditor"/>
           </td>
           <td class="value ${hasErrors(bean: command, field: 'homeTimeOnAttackString', 'errors')}">
-            <input type="text" name="homeTimeOnAttackString" id="homeTimeOnAttack" value="${command?.homeTimeOnAttackString}" class="createGameValueEditor"/>
+            <input type="tel" name="homeTimeOnAttackString" id="homeTimeOnAttack" value="${command?.homeTimeOnAttackString}" class="createGameValueEditor"/>
           </td>
         </tr>
 
@@ -162,10 +162,10 @@
         <tr>
           <td class="label">Pass %:</td>
           <td class="value ${hasErrors(bean: command, field: 'awayPassingPercentage', 'errors')}">
-            <input type="text" name="awayPassingPercentage" id="awayPassingPercentage" value="${command?.awayPassingPercentage}" class="createGameValueEditor"/>
+            <input type="tel" name="awayPassingPercentage" id="awayPassingPercentage" value="${command?.awayPassingPercentage}" class="createGameValueEditor"/>
           </td>
           <td class="value ${hasErrors(bean: command, field: 'homePassingPercentage', 'errors')}">
-            <input type="text" name="homePassingPercentage" id="homePassingPercentage" value="${command?.homePassingPercentage}" class="createGameValueEditor"/>
+            <input type="tel" name="homePassingPercentage" id="homePassingPercentage" value="${command?.homePassingPercentage}" class="createGameValueEditor"/>
           </td>
         </tr>
 
