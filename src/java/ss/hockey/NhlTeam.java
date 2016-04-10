@@ -35,8 +35,8 @@ public enum NhlTeam {
     CANUCKS("Vancouver", "Canucks", NhlLeague.NHL),
     CAPITALS("Washington", "Capitals", NhlLeague.NHL),
     JETS("Winnipeg", "Jets", NhlLeague.NHL),
-    RED_ALL_STARS("Red All Stars", null, NhlLeague.NHL),
-    BLUE_ALL_STARS("Blue All Stars", null, NhlLeague.NHL),
+    RED_ALL_STARS("Green All Stars", null, NhlLeague.NHL),
+    BLUE_ALL_STARS("Black All Stars", null, NhlLeague.NHL),
 
     AUSTRIA("Austria", null, NhlLeague.NATIONAL),
     BELARUS("Belarus", null, NhlLeague.NATIONAL),
